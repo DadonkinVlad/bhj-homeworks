@@ -8,8 +8,7 @@ function resetGame() {
     dead = 0;
     lost = 0;
     deadCounter.textContent = dead;
-    lostCounter.textContent = lost;
-    setMole();
+    lostCounter.textContent = lost;    
 }
 
 holes.forEach(hole => {
@@ -29,7 +28,7 @@ holes.forEach(hole => {
             alert('Вы проиграли!');
             resetGame();
         } else {
-            setMole();
+            
         }
     };
 });
